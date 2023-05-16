@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a:link , a:visited , a:active {
+    text-decoration: none;
+    transition: .5s;
+}
+p{
+    color:white;
+}
+
+h2{
+    color: white;
+}
+
+label{
+    color: white;
+}
+
+main{
+    min-height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+/***************** HEADER ***********************/
+
+header{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+
+}
+.Logo a h1{
+    display: inline-block;
+    color: white;
+}
+
+.Logo a > img{
+    display: inline-block;
+    width: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.conteiner-acordion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.acordion{
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    width: 600px;
+    height: 90VH;
+    overflow: hidden;
+}
+
+.acordion>img{
+    height: 110%;
+    object-fit:contain ;
+    vertical-align: left;
+}
+
+
+/***************** BACK BOTTON ***********************/
+
+.back{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(110, 110, 110);
+    position: fixed;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    margin: 76vh 94vw ;
+    z-index: 999;
+}
+
+.back > img{
+    width: 80%;
+}
+
+/***************** MAIN ***********************/
+
+.presentacion{
+    padding: 60px 0;
+    text-align: center;
+}
+
+
+.presentacion h2{
+    color: white;
+    font-size: 60px;
+    padding: 10px;
+}
+
+.conteiner{
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.conteiner-img-1{
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.conteiner-img-1>img{
+    width: 100%;
+}
+
+/***************** FOOTER ***********************/
+footer{
+    width: 100%;
+    border-top: 2px solid  rgb(58, 58, 58);
+    padding: 30px 0 ;
+    background-color: rgb(12, 12, 12) ;
+    position: absolute;
+
+}
+
+.info{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 30px;
+}
+
+footer .copy , .empresa{
+    display: inline-block;
+}
+
