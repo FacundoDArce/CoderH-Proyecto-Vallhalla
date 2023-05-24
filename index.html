@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +7,42 @@
         <title>OTHILA</title>
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="icon" href="./assets/icons/Othila_logo_black.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     </head>
+
     <body>
-
         <header id="header">
-
             <div class="Logo">
                 <a href="#"><img src="./assets/icons/Othila_logo.png" alt="Logo Othila"></a>
                 <a href="#"><h1>OTHILA</h1></a>
             </div>
+            <div class="nav-desktop">
+                <nav>
+                    <ul>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="./pages/blog.html">BLOG</a></li>
+                        <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hamburger">
+                <nav>
+                    <div class="dropdown-left">
+                        <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item d-inline" href="#">Inicio<br></a></li>
+                            <li><a class="dropdown-item d-inline" href="./pages/blog.html">Blog<br></a></li>
+                            <li><a class="dropdown-item d-inline" href="./pages/contacto.html">Contacto<br></a></li>
+                          </ul>
+                      </div>
+                  </nav>
+            </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="./pages/blog.html">BLOG</a></li>
-                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
         </header>
 
         <main>
@@ -34,21 +53,12 @@
                     </div>
                 </a>
             </div>
-            <section class="conteiner-black">
-                <div class="conteiner-acordion">
-                    <div class="acordion">
+
+            <section class="acordeon_img">
                         <img src="./assets/img/thor.jpg" alt="THOR">
-                    </div>
-                    <div class="acordion">
                         <img src="./assets/img/odin.jpg" alt="ODIN">
-                    </div>
-                    <div class="acordion">
                         <img src="./assets/img/diosa-frigg.jpg" alt="FRIGG">
-                    </div>
-                    <div class="acordion">
                         <img src="./assets/img/hela.jpg" alt="Hela">
-                    </div>
-                </div>
             </section>
 
             <section class="conteiner">
@@ -59,34 +69,123 @@
             </section>
 
             <section class="conteiner">
-                <article>
-                    <div>
-                        <h2>Lorem ipsum</h2>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quisquam veniam dolorum cum quae harum similique repellat et sit porro architecto magnam assumenda, maxime, hic eos possimus mollitia rerum pariatur! Corrupti ea, a esse quidem delectus iusto eaque cumque quaerat fugit iure, cum amet vero repellendus error, consequuntur suscipit nihil praesentium sunt inventore. Commodi rem ab magnam. Dignissimos aliquid aliquam ipsa amet unde est ipsam natus animi, porro error sit exercitationem doloribus atque officiis ducimus odit possimus veritatis vitae officia cum tempora nihil. Hic velit, corporis natus, laboriosam itaque cupiditate expedita ab minima aperiam recusandae illo labore. Eaque debitis tenetur assumenda ipsum placeat, veritatis amet maiores provident natus ea quae dolores praesentium, modi expedita, ad dolorem! Sunt aut ducimus dolore quaerat alias! Officiis corrupti ex blanditiis ut illo dolorem obcaecati, eligendi tempore inventore nobis distinctio quos voluptas ullam maxime perferendis reiciendis repellendus. Qui, error quo? Voluptatibus, animi facere aut saepe neque dolorem hic. Vitae soluta odit totam optio debitis repellat distinctio nam aspernatur, amet autem? Fugit quasi tempore consectetur mollitia? Modi, dicta odio dolore veritatis minima architecto, amet possimus autem impedit quas totam ducimus doloribus corrupti, voluptatibus nesciunt hic qui. Ullam earum magni omnis nihil odit minus est ab, eius maxime totam ut tempore aliquid rem esse quibusdam consectetur amet temporibus possimus quod veritatis facere quam ad? Placeat, natus? Doloremque, sed dignissimos excepturi ipsam beatae dolore aut nostrum magnam facilis delectus perspiciatis suscipit eaque atque odio facere mollitia velit omnis cum voluptate fuga est error maxime. Velit praesentium at ea?</p>
+                <div class="card mb-3 d-flex align-items-center border-3 border-secondary" style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./assets/img/ashe.jpg" class="img-card" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body m-3">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugit perferendis nulla asperiores cupiditate, nihil error corporis deleniti ducimus necessitatibus, ipsa perspiciatis dolores provident, adipisci dicta in ullam sapiente magni? Aliquam, deserunt consequatur omnis eius in inventore illum repudiandae laudantium animi. Harum quod alias eum nesciunt quae reprehenderit tenetur culpa fugiat, ab ex fugit voluptas voluptatibus error repudiandae impedit molestiae ipsam? Cupiditate eveniet adipisci voluptatum, quidem magnam dolores non deleniti fuga hic reiciendis tenetur corporis unde sapiente necessitatibus nulla praesentium quo quaerat ratione eum. Quis debitis tempore accusamus, corporis hic aspernatur, tempora nulla labore adipisci aut nostrum eius expedita optio quo recusandae voluptatum sequi provident, eligendi iste? Suscipit laboriosam inventore assumenda quae aperiam? Omnis, fuga dolores! Iure veniam eum quisquam at! Eveniet fugiat aut quidem adipisci cupiditate incidunt dolores corrupti ipsa libero unde sed deleniti sint omnis fuga, eius, animi quisquam eos laboriosam consequatur vitae? Quis officiis molestiae placeat dolorum itaque. Maiores deserunt iste quae saepe, excepturi asperiores cupiditate iure voluptatibus, vero eveniet ipsam repellendus nihil et impedit molestiae autem. Quod amet ipsam porro aspernatur, aliquid dolores sed odit voluptates deleniti perferendis. Odit doloremque repudiandae, temporibus voluptatum voluptates voluptatem saepe nisi recusandae nam laudantium dolore doloribus eveniet soluta delectus cum excepturi similique minima. Consequuntur, architecto error temporibus enim iure obcaecati accusamus eos officiis illo sequi vel aliquam aperiam qui! Quasi omnis suscipit ratione? Ab quae tempore corporis hic voluptates aperiam aliquid nam tempora repellat, voluptatem enim dolorum officiis suscipit dolor architecto id libero! Quidem labore ipsa est. Fuga, officiis quis.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="conteiner-img-1">
-                        <img src="./assets/img/ashe.jpg" alt="">
-                    </div>
-                </article>
+                  </div>
             </section>
 
-            <section class="conteiner">
-                <div>
-                    <h2>Lorem ipsum</h2>
-                    <br>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugit perferendis nulla asperiores cupiditate, nihil error corporis deleniti ducimus necessitatibus, ipsa perspiciatis dolores provident, adipisci dicta in ullam sapiente magni? Aliquam, deserunt consequatur omnis eius in inventore illum repudiandae laudantium animi. Harum quod alias eum nesciunt quae reprehenderit tenetur culpa fugiat, ab ex fugit voluptas voluptatibus error repudiandae impedit molestiae ipsam? Cupiditate eveniet adipisci voluptatum, quidem magnam dolores non deleniti fuga hic reiciendis tenetur corporis unde sapiente necessitatibus nulla praesentium quo quaerat ratione eum. Quis debitis tempore accusamus, corporis hic aspernatur, tempora nulla labore adipisci aut nostrum eius expedita optio quo recusandae voluptatum sequi provident, eligendi iste? Suscipit laboriosam inventore assumenda quae aperiam? Omnis, fuga dolores! Iure veniam eum quisquam at! Eveniet fugiat aut quidem adipisci cupiditate incidunt dolores corrupti ipsa libero unde sed deleniti sint omnis fuga, eius, animi quisquam eos laboriosam consequatur vitae? Quis officiis molestiae placeat dolorum itaque. Maiores deserunt iste quae saepe, excepturi asperiores cupiditate iure voluptatibus, vero eveniet ipsam repellendus nihil et impedit molestiae autem. Quod amet ipsam porro aspernatur, aliquid dolores sed odit voluptates deleniti perferendis. Odit doloremque repudiandae, temporibus voluptatum voluptates voluptatem saepe nisi recusandae nam laudantium dolore doloribus eveniet soluta delectus cum excepturi similique minima. Consequuntur, architecto error temporibus enim iure obcaecati accusamus eos officiis illo sequi vel aliquam aperiam qui! Quasi omnis suscipit ratione? Ab quae tempore corporis hic voluptates aperiam aliquid nam tempora repellat, voluptatem enim dolorum officiis suscipit dolor architecto id libero! Quidem labore ipsa est. Fuga, officiis quis.
-                    </p>
-                    <div class="conteiner-img-1">
-                        <img src="./assets/img/braum.jpg" alt="">
+            <section class="conteiner_full">
+                <div class="slider">
+
+                    <div class="card bg-secondary m-4" style="width: 18rem;">
+                        <img src="./assets/img/tyr-deus-da-mitolotoliga-nordica.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
+
+                    <div class="card bg-secondary m-4" style="width: 18rem;">
+                        <img src="./assets/img/thor2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <div class="card bg-secondary m-4" style="width: 18rem;">
+                        <img src="./assets/img/tyr-deus-da-mitolotoliga-nordica.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <div class="card bg-secondary m-4" style="width: 18rem;">
+                        <img src="./assets/img/tyr-deus-da-mitolotoliga-nordica.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <div class="card bg-secondary m-4" style="width: 18rem;">
+                        <img src="./assets/img/tyr-deus-da-mitolotoliga-nordica.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <div class="card bg-secondary m-4" style="width: 18rem;">
+                        <img src="./assets/img/tyr-deus-da-mitolotoliga-nordica.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+
                 </div>
             </section>
 
-        </main>
+            <section class="conteiner">
+                <div class="card mb-3 d-flex align-items-center border-3 border-secondary " style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./assets/img/braum.jpg" class="img-card" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body m-3">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugit perferendis nulla asperiores cupiditate, nihil error corporis deleniti ducimus necessitatibus, ipsa perspiciatis dolores provident, adipisci dicta in ullam sapiente magni? Aliquam, deserunt consequatur omnis eius in inventore illum repudiandae laudantium animi. Harum quod alias eum nesciunt quae reprehenderit tenetur culpa fugiat, ab ex fugit voluptas voluptatibus error repudiandae impedit molestiae ipsam? Cupiditate eveniet adipisci voluptatum, quidem magnam dolores non deleniti fuga hic reiciendis tenetur corporis unde sapiente necessitatibus nulla praesentium quo quaerat ratione eum. Quis debitis tempore accusamus, corporis hic aspernatur, tempora nulla labore adipisci aut nostrum eius expedita optio quo recusandae voluptatum sequi provident, eligendi iste? Suscipit laboriosam inventore assumenda quae aperiam? Omnis, fuga dolores! Iure veniam eum quisquam at! Eveniet fugiat aut quidem adipisci cupiditate incidunt dolores corrupti ipsa libero unde sed deleniti sint omnis fuga, eius, animi quisquam eos laboriosam consequatur vitae? Quis officiis molestiae placeat dolorum itaque. Maiores deserunt iste quae saepe, excepturi asperiores cupiditate iure voluptatibus, vero eveniet ipsam repellendus nihil et impedit molestiae autem. Quod amet ipsam porro aspernatur, aliquid dolores sed odit voluptates deleniti perferendis. Odit doloremque repudiandae, temporibus voluptatum voluptates voluptatem saepe nisi recusandae nam laudantium dolore doloribus eveniet soluta delectus cum excepturi similique minima. Consequuntur, architecto error temporibus enim iure obcaecati accusamus eos officiis illo sequi vel aliquam aperiam qui! Quasi omnis suscipit ratione? Ab quae tempore corporis hic voluptates aperiam aliquid nam tempora repellat, voluptatem enim dolorum officiis suscipit dolor architecto id libero! Quidem labore ipsa est. Fuga, officiis quis.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
 
-
+            <section>
+                <div class="conteiner1">
+                    <div class="container text-center ">
+                        <div class="row">
+                          <div class="collage col">
+                            <img src="./assets/img/viking1.png" alt="">
+                          </div>
+                          <div class="collage col">
+                            <img src="./assets/img/viking2.png" alt="">
+                          </div>
+                        </div>
+                        <div class="row mt-4">
+                          <div class="collage col">
+                            <img src="./assets/img/viking3.png" alt="">
+                          </div>
+                          <div class="collage col">
+                            <img src="./assets/img/viking4.png" alt="">
+                          </div>
+                          <div class="collage col">
+                            <img src="./assets/img/viking5.png" alt="">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         <footer>
             <div class="info">
                 <div class="copy">
@@ -97,6 +196,62 @@
                 </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.slider').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 300,
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            autoplay: true,
+                            autoplaySpeed: 2000,
+                            dots: false,
+                            arrows: false,
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            autoplay: true,
+                            autoplaySpeed: 2000,
+                            dots: false,
+                            arrows: false,
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            autoplay: true,
+                            autoplaySpeed: 2000,
+                            dots: false,
+                            arrows: false,
+                        }
+                        }
+                    ]
+                    });
+            });
+        </script>
     </body>
-
 </html>
