@@ -1,0 +1,187 @@
+.acordeon_img{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+
+}
+.acordeon_img img{
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    opacity: .5;
+    transition: .5s ease;
+
+}
+.acordeon_img img:hover{
+    width: 30vw;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.conteiner{
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1300px;
+    .card{
+        background-color: black !important;
+        .img-card{
+            width: 100%;
+            height: 100%;
+            object-fit: cover!important;
+            border-radius: 3px 0px 0px 3px;
+        }
+        .img-card-r{
+            width: 100%;
+            height: 100%;
+            object-fit: cover!important;
+            border-radius: 0px 3px 3px 0px;
+        }
+        .card-text .text-muted{
+            color: rgb(179, 179, 179) !important;
+        }
+        .conteiner_leer{
+            display: flex;
+            justify-content: right;
+        }
+        .boton_leer_mas{
+            display: inline-block;
+            padding: 8px;
+            border-radius: 5px;
+            border: 2px solid gray;
+        }
+        .boton_leer_mas a:link , a:visited , a:active {
+            text-decoration: none!important;
+            transition: .5s;
+            color: white;
+        }
+
+    }
+
+    .presentacion{
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .presentacion h2{
+        color: white;
+        text-align: center;
+        font-size: 3em;
+        padding: 10px;
+    }
+}
+.conteiner_full_blog{
+    background-image: url("../assets/img/paraiso-valhalla.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.conteiner_full_thor{
+    background-image: url("../assets/img/thor2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.conteiner_full_tyr{
+    background-image: url("../assets/img/tyr-deus-da-mitolotoliga-nordica.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.conteiner h2{
+    font-size: 62px;
+    color: white;
+    text-shadow:  1px 1px 2px black;
+}
+
+.conteiner-img-1{
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.conteiner-img-1>img{
+    width: 100%;
+}
+
+.container-nav-post{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    .nav-post {
+        display:flex ;
+    }
+    .nav-post a,a:link , a:visited , a:active {
+        text-decoration: none!important;
+        transition: .5s;
+        color: white;
+        display: inline-block;
+        padding: 25px 5px;
+        font-size: 22px;
+    }
+}
+.collage > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.col{
+    overflow: hidden;
+}
+
+.conteiner1{
+    margin: 20px 0 20px 0;
+}
+
+.conteiner_full{
+    background-image: url("../assets/img/background-dirt.jpg");
+    padding: 10vh 0 10vh 0 ;
+    background-size: cover;
+    object-fit: contain;
+    margin-bottom: 15px;
+    .slider{
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+}
+
+
+
+.conteiner_contact_s{
+    background-image: url("../assets/img/gate-of-vallhalla.jpg") ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.conteiner-contact {
+    background-color:rgba(220, 218, 219, 0.8);
+    border-radius: 15px;
+    padding: 60px 25px !important;
+    color: black;
+    margin: 0 auto;
+
+}
+
+.test{
+    text-align: left;
+    padding: 25px;
+    color: black;
+}
+
+.test2{
+    padding: 90px 0;
+}

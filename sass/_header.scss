@@ -1,0 +1,43 @@
+header{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    .Logo{
+        display: flex;
+        align-items: center;
+
+    }
+    .Logo a h1{
+        display: inline-block;
+        color: white;
+    }
+
+    .Logo a > img{
+        display: inline-block;
+        width: 40px;
+    }
+}
+
+
+
+.nav-desktop nav ul{
+    margin: auto 0;
+}
+
+.nav-desktop nav ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.nav-desktop nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-desktop nav ul li a:hover{
+    color: rgb(197, 197, 197);
+    text-decoration: underline;
+}

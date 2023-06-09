@@ -1,0 +1,20 @@
+.container_back{
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+}
+.back{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(110, 110, 110);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-top: 75vh;
+    border-radius: 100%;
+    text-align: right;
+    z-index: 9999999;
+    .back > img{
+        width: 80%;
+    }
+}

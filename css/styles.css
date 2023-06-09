@@ -1,259 +1,333 @@
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Roboto';
-    scroll-behavior: smooth;
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  scroll-behavior: smooth;
 }
 
-html{
-    background-color: black;
-}
-a:link , a:visited , a:active {
-    text-decoration: none;
-    transition: .5s;
-}
-p{
-    color:white;
+html {
+  background-color: black;
 }
 
-h2{
-    color: white;
+body {
+  background-color: black !important;
 }
 
-h5{
-    color: white !important; 
+a:link, a:visited, a:active {
+  text-decoration: none !important;
+  transition: 0.5s;
 }
 
-label{
-    color: white;
+p {
+  color: white;
 }
 
-main{
-    min-height: 100vh;
-    position: relative;
-    background-color: black;
+h2 {
+  color: white;
 }
 
-/***************** HEADER ***********************/
-
-header{
-    background-color: black;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2%;
+h5 {
+  color: white !important;
 }
 
-.Logo{
-    display: flex;
-    align-items: center;
-
-}
-.Logo a h1{
-    display: inline-block;
-    color: white;
+label {
+  color: white;
 }
 
-.Logo a > img{
-    display: inline-block;
-    width: 40px;
+main {
+  min-height: 100vh;
+  position: relative;
+  background-color: black;
 }
 
-nav ul{
-    margin: auto 0;
+span {
+  color: white;
 }
 
-nav ul li {
-    display: inline-block;
+header {
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+}
+header .Logo {
+  display: flex;
+  align-items: center;
+}
+header .Logo a h1 {
+  display: inline-block;
+  color: white;
+}
+header .Logo a > img {
+  display: inline-block;
+  width: 40px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
+.nav-desktop nav ul {
+  margin: auto 0;
 }
 
-
-
-@media screen and (max-width: 767px) {
-    .nav-desktop{
-display: none;
-    }
+.nav-desktop nav ul li {
+  display: inline-block;
+  padding: 0 5px;
 }
 
-@media screen and (min-width: 767px) {
-    .hamburger{
-display: none;
-    }
-}
-/***************** BACK BOTTON ***********************/
-
-.back{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(110, 110, 110);
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    margin: 76vh 96vw ;
-    z-index: 999;
+.nav-desktop nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 
-.back > img{
-    width: 80%;
+.nav-desktop nav ul li a:hover {
+  color: rgb(197, 197, 197);
+  text-decoration: underline;
 }
 
-/***************** MAIN ***********************/
-
-.acordeon_img{
-    display: flex;
-    width: 100%;
-    height: 90vh;
+.container_back {
+  display: flex;
+  justify-content: end;
+  padding-right: 15px;
 }
 
-.acordeon_img img{
-    width: 0;
-    flex-grow: 1;
-    object-fit:cover;
-    opacity: .5;
-    transition: .5s ease;
+.back {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(110, 110, 110);
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-top: 75vh;
+  border-radius: 100%;
+  text-align: right;
+  z-index: 9999999;
+}
+.back .back > img {
+  width: 80%;
 }
 
-.acordeon_img img:hover{
-    width: 30vw;
-    opacity: 1;
-    filter: contrast(120%);
+.acordeon_img {
+  display: flex;
+  width: 100%;
+  height: 90vh;
 }
 
-.presentacion{
-    padding: 60px 0;
-    text-align: center;
+.acordeon_img img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.5;
+  transition: 0.5s ease;
 }
 
-
-.presentacion h2{
-    color: white;
-    text-align: center;
-    font-size: 3em;
-    padding: 10px;
+.acordeon_img img:hover {
+  width: 30vw;
+  opacity: 1;
+  filter: contrast(120%);
 }
 
-.conteiner{
-    margin: 0 auto;
-    width: 85%;
-    max-width: 1300px;
+.conteiner {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1300px;
+}
+.conteiner .card {
+  background-color: black !important;
+}
+.conteiner .card .img-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  border-radius: 3px 0px 0px 3px;
+}
+.conteiner .card .img-card-r {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  border-radius: 0px 3px 3px 0px;
+}
+.conteiner .card .card-text .text-muted {
+  color: rgb(179, 179, 179) !important;
+}
+.conteiner .card .conteiner_leer {
+  display: flex;
+  justify-content: right;
+}
+.conteiner .card .boton_leer_mas {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+.conteiner .card .boton_leer_mas a:link, .conteiner .card a:visited, .conteiner .card a:active {
+  text-decoration: none !important;
+  transition: 0.5s;
+  color: white;
+}
+.conteiner .presentacion {
+  padding: 60px 0;
+  text-align: center;
+}
+.conteiner .presentacion h2 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  padding: 10px;
 }
 
-.conteiner-img-1{
-    width: 350px;
-    height: 350px;
-    overflow: hidden;
-    border-radius: 5%;
+.conteiner_full_blog {
+  background-image: url("../assets/img/paraiso-valhalla.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
 }
 
-.conteiner-img-1>img{
-    width: 100%;
+.conteiner_full_thor {
+  background-image: url("../assets/img/thor2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
 }
 
-
-.collage > img{
-    width: 100%;
-    object-fit: cover;
+.conteiner_full_tyr {
+  background-image: url("../assets/img/tyr-deus-da-mitolotoliga-nordica.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
 }
 
-.col{
-    overflow: hidden;
+.conteiner h2 {
+  font-size: 62px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
 
-.conteiner1{
-    margin: 20px 0 20px 0;
-}
-/***************** FOOTER ***********************/
-footer{
-    width: 100%;
-    border-top: 2px solid  rgb(58, 58, 58);
-    padding: 30px 0 ;
-    background-color: rgb(12, 12, 12) ;
-    position: absolute;
-
+.conteiner-img-1 {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 5%;
 }
 
-.info{
-    display: flex;
-    justify-content:space-between;
-    margin: 0 30px;
+.conteiner-img-1 > img {
+  width: 100%;
 }
 
-footer .copy , .empresa{
-    display: inline-block;
+.container-nav-post {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.container-nav-post .nav-post {
+  display: flex;
+}
+.container-nav-post .nav-post a, .container-nav-post a:link, .container-nav-post a:visited, .container-nav-post a:active {
+  text-decoration: none !important;
+  transition: 0.5s;
+  color: white;
+  display: inline-block;
+  padding: 25px 5px;
+  font-size: 22px;
 }
 
-.card{
-    background-color: black !important;
+.collage > img {
+  width: 100%;
+  object-fit: cover;
 }
 
-.img-card{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 3px 0px 0px 3px;
+.col {
+  overflow: hidden;
 }
 
-@media screen and (max-width: 767px) {
-    .img-card{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 3px 3px 0px 0px;
-    }
+.conteiner1 {
+  margin: 20px 0 20px 0;
 }
 
-
-
-.slider{
-    margin: 0 auto;
-    max-width: 1300px;
+.conteiner_full {
+  background-image: url("../assets/img/background-dirt.jpg");
+  padding: 10vh 0 10vh 0;
+  background-size: cover;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.conteiner_full .slider {
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
-.conteiner_full{
-    background-image: url("../assets/img/background-dirt.jpg");
-    padding: 10vh 0 10vh 0 ;
-    background-size: cover;
-    object-fit: contain;
-    margin-bottom: 15px;
-}
-
-.conteiner_contact_s{
-    background-image: url("../assets/img/gate-of-vallhalla.jpg") ;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-@media screen and (max-width: 991px) {
-    .conteiner_contact_s{
-        height: 100%;
-    }
+.conteiner_contact_s {
+  background-image: url("../assets/img/gate-of-vallhalla.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 .conteiner-contact {
-    background-color:rgba(220, 218, 219, 0.8);
-    border-radius: 15px;
-    padding: 60px 25px !important;
-    color: black;
-    margin: 0 auto;
-
+  background-color: rgba(220, 218, 219, 0.8);
+  border-radius: 15px;
+  padding: 60px 25px !important;
+  color: black;
+  margin: 0 auto;
 }
 
-.test{
-    text-align: left;
-    padding: 25px;
-    color: black;
+.test {
+  text-align: left;
+  padding: 25px;
+  color: black;
 }
 
-.test2{
-    padding: 90px 0;
+.test2 {
+  padding: 90px 0;
 }
+
+footer {
+  width: 100%;
+  border-top: 2px solid rgb(58, 58, 58);
+  padding: 30px 0;
+  background-color: rgb(12, 12, 12);
+  position: absolute;
+}
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+footer footer .copy, footer .empresa {
+  display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+  .conteiner_contact_s {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .img-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px 3px 0px 0px;
+  }
+  .nav-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  .hamburger {
+    display: none;
+  }
+}
+/***************** HEADER ***********************/
+/***************** BACK BOTTON ***********************/
+/***************** MAIN ***********************/
+/***************** FOOTER ***********************/
+
+/*# sourceMappingURL=styles.css.map */
